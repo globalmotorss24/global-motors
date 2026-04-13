@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Motors - Personal Link Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated background elements -->
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header class="profile-header">
+            <div class="profile-avatar-wrapper">
+                <div class="profile-avatar-ring"></div>
+                <div class="logo-container">
+                    <img src="logo.png" alt="" class="logo-img" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=GM&background=020617&color=fff&size=200';">
+                </div>
+                <div class="status-badge">
+                    <span class="pulse"></span>
+                </div>
+            </div>
+            
+            <h1 class="brand-name">GLOBAL MOTORS</h1>
+            <p class="brand-slogan">
+                <span class="slogan-text">Professional avtoservis xizmati</span>
+            </p>
+        </header>
+
+        <!-- Links Section -->
+        <main class="links-container">
+            
+            <!-- Link 1: Telegram -->
+            <a href="https://t.me/globalavtozapchast24" class="link-card group" target="_blank" rel="noopener">
+                <div class="card-bg"></div>
+                <div class="card-icon telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Telegram</h2>
+                    <p class="card-subtitle">@globalavtozapchast24</p>
+                </div>
+                <div class="card-action">
+                    <div class="action-btn">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Link 2: Instagram -->
+            <a href="https://instagram.com/global_motors_auto_service" class="link-card group" target="_blank" rel="noopener">
+                <div class="card-bg"></div>
+                <div class="card-icon instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Instagram</h2>
+                    <p class="card-subtitle">@global_motors_auto_service</p>
+                </div>
+                <div class="card-action">
+                    <div class="action-btn">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Link 3: Phone/Call -->
+            <a href="tel:+998995905010" class="link-card group" target="_blank" rel="noopener">
+                <div class="card-bg"></div>
+                <div class="card-icon phone">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Telefon Raqam</h2>
+                    <p class="card-subtitle">+998 99 590 50 10</p>
+                </div>
+                <div class="card-action">
+                    <div class="action-btn">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Link 4: Location/Maps -->
+            <a href="https://share.google/ugkVsDyBUBSC9qKF6" class="link-card group" target="_blank" rel="noopener">
+                <div class="card-bg"></div>
+                <div class="card-icon location">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Manzilimiz</h2>
+                    <p class="card-subtitle">Xaritadan ko'rish yordamida</p>
+                </div>
+                <div class="card-action">
+                    <div class="action-btn">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                </div>
+            </a>
+
+        </main>
+        
+        <footer>
+            <div class="footer-divider"></div>
+            <p>&copy; 2026 <span>Global Motors</span>. Premium Quality</p>
+        </footer>
+    </div>
+
+    <!-- Mouse Tracking Script for Card Hover Effect -->
+    <script>
+        document.querySelectorAll('.link-card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+</body>
+</html>
